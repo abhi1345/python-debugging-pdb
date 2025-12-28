@@ -29,7 +29,7 @@ def area_of_rectangle(height, width = None):
     >>> area_of_rectangle (7, 2)
     14
     """
-    if width:
+    if not width:
         width = height
     area = height * width
     return area
