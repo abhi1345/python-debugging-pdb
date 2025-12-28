@@ -5,7 +5,7 @@
 import sys
 
 
-def area_of_rectangle(height, width = None):
+def area_of_rectangle(height : float, width : float = None):
     """
     Returns the area of a rectangle.
 
@@ -46,7 +46,9 @@ if __name__ == '__main__':
     if len(sys.argv) > 3:
         width = sys.argv[1]
 
-    area = area_of_rectangle(height, width)
+    height_as_float = int(height)
+    width_as_float = int(width)
+    area = area_of_rectangle(height_as_float, width_as_float)
 
     message = "The area of a {h} X {w} rectangle is {a}".format(
             h = height,
